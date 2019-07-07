@@ -1,5 +1,7 @@
 Agile Rails, Pragmatic Book
-July 5, 2019
+July 7, 2019
+
+done with chp6, pg87
 
 #Rails
 1. docker run -i -t --rm -v ${PWD}:/usr/src/app ruby:2.6 bash
@@ -17,3 +19,9 @@ July 5, 2019
    docker-compose up -d --force-recreate web
    
 5. docker volume [ls rm]
+
+6. docker-compose exec web rails g scaffold Product title:string description:text image_url:string price:decimal
+   
+7. docker-compose exec web rails db:migrate
+   docker-compose exec web rails test
+   docker-compose exec web rails db:seed      - pg.80
