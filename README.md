@@ -1,12 +1,12 @@
 Agile Rails, Pragmatic Book
-July 7, 2019
+July 14, 2019, Sun
 
-done with chp6, pg87
+done with chp6, pg80
 
 #Rails
-1. docker run -i -t --rm -v ${PWD}:/usr/src/app ruby:2.6 bash
+1. docker run -i -t --rm -v ${PWD}:/usr/src/app ruby:2.6.3 bash
    gem install rails
-   rails new myapp --skip-test --skip-bundle
+   rails new myapp --no-ri --no-rdoc
    exit
 2. docker build -t docker_rails .
 
